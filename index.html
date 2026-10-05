@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Claude Code - The Ultimate AI Coding Assistant</title>
+    <meta name="description" content="A comprehensive guide to working with Claude Code, covering tools, skills, subagents, commands, and advanced features.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background-elements">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <nav class="navbar">
+        <div class="logo">Claude Code</div>
+        <ul class="nav-links">
+            <li><a href="#workflow">Workflow</a></li>
+            <li><a href="#primitives">Primitives</a></li>
+            <li><a href="#ecosystem">Ecosystem</a></li>
+            <li><a href="#subagents">Subagents</a></li>
+            <li><a href="#commands">Commands</a></li>
+            <li><a href="#advanced">Advanced</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero">
+            <div class="container fade-in-up">
+                <div class="glass-panel">
+                    <h1 class="gradient-text">Claude Code</h1>
+                    <p class="subtitle">Your ultimate coding companion. Accessible from Mobile Apps, Desktop Apps, Cloud, Slack, and more.</p>
+                    <a href="#workflow" class="cta-button">Explore Features</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Workflow Section -->
+        <section id="workflow" class="section">
+            <div class="container">
+                <h2 class="section-title fade-in-up">How to work with Claude Code</h2>
+                <div class="workflow-grid">
+                    <div class="workflow-card stagger-in">
+                        <div class="step-number">01</div>
+                        <h3>Make it Ask Questions</h3>
+                        <p>Have Claude ask targeted questions to clarify precise requirements and goals before initiating work.</p>
+                    </div>
+                    <div class="workflow-card stagger-in">
+                        <div class="step-number">02</div>
+                        <h3>Ask it to Explore</h3>
+                        <p>Prompt it to explore codebases, internet sources, tools, and skills to gather comprehensive contextual insights.</p>
+                    </div>
+                    <div class="workflow-card stagger-in">
+                        <div class="step-number">03</div>
+                        <h3>Create a Plan</h3>
+                        <p>Direct it to formulate a structured, step-by-step action plan before making any code modifications.</p>
+                    </div>
+                    <div class="workflow-card stagger-in">
+                        <div class="step-number">04</div>
+                        <h3>Execute Plan</h3>
+                        <p>Command it to execute the planned architecture and implement code updates automatically.</p>
+                    </div>
+                    <div class="workflow-card stagger-in">
+                        <div class="step-number">05</div>
+                        <h3>Ask it to Test</h3>
+                        <p>Instruct it to create and run test suites, analyzing output to confirm correctness and prevent regressions.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Primitives Section -->
+        <section id="primitives" class="section">
+            <div class="container">
+                <h2 class="section-title fade-in-up">Core Primitives</h2>
+                <div class="primitives-list">
+                    <div class="primitive-item fade-in-up">
+                        <div class="primitive-icon">T</div>
+                        <div class="primitive-content">
+                            <h3>Tool</h3>
+                            <p>A function written in Python, TypeScript, etc., connected via the Model Context Protocol (MCP).</p>
+                        </div>
+                    </div>
+                    <div class="primitive-item fade-in-up">
+                        <div class="primitive-icon">S</div>
+                        <div class="primitive-content">
+                            <h3>Skill</h3>
+                            <p>A specialized set of functions bundled with a prompt that describes precisely how to leverage them.</p>
+                        </div>
+                    </div>
+                    <div class="primitive-item fade-in-up">
+                        <div class="primitive-icon">A</div>
+                        <div class="primitive-content">
+                            <h3>Subagent</h3>
+                            <p>A specialized, autonomous agent capable of utilizing various tools and skills to accomplish complex tasks.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Ecosystem Section (Tools & Skills) -->
+        <section id="ecosystem" class="section">
+            <div class="container">
+                <h2 class="section-title fade-in-up">Tools & Skills Ecosystem</h2>
+                
+                <div class="ecosystem-grid">
+                    <div class="glass-card fade-in-up">
+                        <h3><span class="gradient-text">Built-in Tools</span> <a href="#" class="inline-link">Docs</a></h3>
+                        <ul class="feature-list">
+                            <li><strong>Core:</strong> Bash, Cron, File CRUD operations, Find</li>
+                            <li><strong>Search:</strong> Integrated WebSearch capabilities</li>
+                            <li><strong>Language Support:</strong> LSP integration (requires installation)</li>
+                        </ul>
+                        <div class="note-box">
+                            <h4>Custom Tools <a href="#" class="inline-link">Docs</a></h4>
+                            <p>Connect custom tools to the CLI using MCP. Tool Search is enabled by default for seamless scaling. Strict permissions can be configured for all tools.</p>
+                        </div>
+                    </div>
+
+                    <div class="glass-card fade-in-up">
+                        <h3><span class="gradient-text">Built-in Skills</span> <a href="#" class="inline-link">Docs</a></h3>
+                        <ul class="feature-list">
+                            <li><code>/code-review</code>, <code>/debug</code> - Code analysis</li>
+                            <li><code>/deep-research &lt;question&gt;</code> - Comprehensive web search</li>
+                            <li><code>/design [brief]</code> - Draft detailed UI mockups</li>
+                            <li><code>/run</code>, <code>/verify</code> - Execute and validate your application</li>
+                            <li><code>/simplify [target]</code> - Refactor and simplify code</li>
+                            <li><code>/slides [brief]</code> - Generate presentations</li>
+                        </ul>
+                        <div class="note-box">
+                            <h4>Custom Skills <a href="#" class="inline-link">Docs</a></h4>
+                            <p>Custom skills operate securely and only gain access to parent conversations if explicitly forked.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Subagents Section -->
+        <section id="subagents" class="section">
+            <div class="container">
+                <div class="glass-card full-width fade-in-up">
+                    <h2 class="section-title left-align">Powerful Subagents <a href="#" class="inline-link text-small">Docs</a></h2>
+                    <div class="features-grid">
+                        <div class="feature-item">
+                            <span class="bullet"></span>
+                            <p>Run seamlessly in the <strong>background</strong> or <strong>foreground</strong>.</p>
+                        </div>
+                        <div class="feature-item">
+                            <span class="bullet"></span>
+                            <p>Enforce strict <strong>permissions</strong> restricting access to specific tools and skills.</p>
+                        </div>
+                        <div class="feature-item">
+                            <span class="bullet"></span>
+                            <p>Maintain distinct <strong>memory</strong> at either the user or project level.</p>
+                        </div>
+                        <div class="feature-item">
+                            <span class="bullet"></span>
+                            <p>Access parent context exclusively when explicitly <strong>forked</strong>.</p>
+                        </div>
+                        <div class="feature-item">
+                            <span class="bullet"></span>
+                            <p>Safely modify code in an isolated, separate <strong>worktree</strong>.</p>
+                        </div>
+                        <div class="feature-item">
+                            <span class="bullet"></span>
+                            <p>Capable of recursively spawning their own <strong>subagents</strong>.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Commands Section -->
+        <section id="commands" class="section">
+            <div class="container">
+                <h2 class="section-title fade-in-up">Essential Commands <a href="#" class="inline-link title-link">Docs</a></h2>
+                <div class="commands-grid fade-in-up">
+                    <div class="command-card">
+                        <div class="cmd-name">/usage</div>
+                        <div class="cmd-desc">View token costs for current session and monthly aggregates.</div>
+                    </div>
+                    <div class="command-card">
+                        <div class="cmd-name">/memory</div>
+                        <div class="cmd-desc">List active memory files loaded in the current session.</div>
+                    </div>
+                    <div class="command-card">
+                        <div class="cmd-name">/context</div>
+                        <div class="cmd-desc">Analyze real-time context consumption details.</div>
+                    </div>
+                    <div class="command-card">
+                        <div class="cmd-name">/rewind</div>
+                        <div class="cmd-desc">Revert conversation and codebase to a previous checkpoint.</div>
+                    </div>
+                    <div class="command-card">
+                        <div class="cmd-name">/resume</div>
+                        <div class="cmd-desc">Restore and continue the previous conversation session.</div>
+                    </div>
+                    <div class="command-card">
+                        <div class="cmd-name">/loop</div>
+                        <div class="cmd-desc">Execute continuous tasks at defined intervals.</div>
+                    </div>
+                    <div class="command-card">
+                        <div class="cmd-name">/branch</div>
+                        <div class="cmd-desc">Fork the current conversation into a pristine new session.</div>
+                    </div>
+                    <div class="command-card">
+                        <div class="cmd-name">/batch</div>
+                        <div class="cmd-desc">Deploy multiple subagents to process task lists in parallel.</div>
+                    </div>
+                    <div class="command-card">
+                        <div class="cmd-name">/output-style</div>
+                        <div class="cmd-desc">Toggle modes: Proactive, Concise, Explanatory, or Learning.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Advanced & Settings Section -->
+        <section id="advanced" class="section">
+            <div class="container">
+                <div class="ecosystem-grid">
+                    <div class="glass-card fade-in-up">
+                        <h3><span class="gradient-text">Configuration</span></h3>
+                        
+                        <div class="config-section">
+                            <h4>Settings <a href="#" class="inline-link">Docs</a></h4>
+                            <ul>
+                                <li><code>cleanupPeriodDays</code> (default 30 days) - Conversation history retention</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="config-section">
+                            <h4>Environment Variables <a href="#" class="inline-link">Docs</a></h4>
+                            <ul>
+                                <li><code>CLAUDE_CODE_PROMPT_CACHE_TTL</code> (default: 1 hr)</li>
+                                <li><code>CLAUDE_CODE_SUBAGENT_PROMPT_CACHE_TTL</code> (default: 5 min)</li>
+                                <li><code>CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC</code></li>
+                            </ul>
+                        </div>
+
+                        <div class="config-section">
+                            <h4>Privacy</h4>
+                            <ul>
+                                <li><a href="https://claude.ai/settings/data-privacy-controls" class="inline-link" target="_blank">Training Data Opt Out</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="glass-card fade-in-up">
+                        <h3><span class="gradient-text">Advanced Capabilities</span></h3>
+                        <ul class="advanced-list">
+                            <li><strong>Workflows</strong> - Spawn orchestrated sets of subagents for designated tasks.</li>
+                            <li><strong>Cross Session Messaging</strong> - Communicate and control external sessions.</li>
+                            <li><strong>Hooks</strong> - Event triggers pre/post sessions, turns, and tool executions.</li>
+                            <li><strong>Browser & Computer Use</strong> - Native interaction with UI and system environments.</li>
+                            <li><strong>Agent View</strong> - <em>(Research Preview)</em> Enhanced visual introspection.</li>
+                            <li><strong>Agent Teams</strong> - <em>(Experimental)</em> Multi-agent collaborative squads.</li>
+                            <li><strong>Customization</strong> - Status Line Customizations and Mods.</li>
+                            <li><strong>Local LLMs</strong> - Support for offline or localized models.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Made with Claude Code.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
